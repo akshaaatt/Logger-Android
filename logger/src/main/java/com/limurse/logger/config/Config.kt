@@ -1,8 +1,8 @@
 package com.limurse.logger.config
 
-import com.limurse.logger.config.Constance.Companion.DEFAULT_PATTERN
-import com.limurse.logger.config.Constance.Companion.DEFAULT_TAG
-import com.limurse.logger.config.Constance.Companion.LOGCAT_ENABLE
+import com.limurse.logger.config.Constants.Companion.DEFAULT_PATTERN
+import com.limurse.logger.config.Constants.Companion.DEFAULT_TAG
+import com.limurse.logger.config.Constants.Companion.LOGCAT_ENABLE
 
 class Config private constructor(
     val directory: String,

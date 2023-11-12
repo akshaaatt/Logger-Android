@@ -115,7 +115,7 @@ object Logger {
     }
 
     fun deleteFiles() = checkBlock {
-        i(msg = "FileLogger delete files called")
+        i(msg = "Logger delete files called")
         fileWriter?.deleteLogsDir()
     }
 
@@ -134,7 +134,7 @@ object Logger {
         } else if (isEnable) {
             Log.e(
                 javaClass.simpleName,
-                "SDK not initialized maybe forgot call FileLogger.init(config: Config)"
+                "SDK not initialized maybe forgot call Logger.init(config: Config)"
             )
         }
     }

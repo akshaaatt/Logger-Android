@@ -2,7 +2,7 @@ package com.limurse.logger.util
 
 import com.limurse.logger.Logger
 import com.limurse.logger.config.Config
-import com.limurse.logger.config.Constance
+import com.limurse.logger.config.Constants
 import com.limurse.logger.threading.ThreadQueue
 import java.io.*
 import java.util.zip.ZipEntry
@@ -19,7 +19,7 @@ internal class FileZipper {
         try {
             val fileName = zipFileName?.replace(".", "_")?.replace("/", "_")
             val logFileDirectory = File(config.directory)
-            val logDirectory = File(logFileDirectory.absolutePath + Constance.DIRECTORY)
+            val logDirectory = File(logFileDirectory.absolutePath + Constants.DIRECTORY)
             val zipFile = File(logDirectory, "${fileName ?: "Logs"}.zip")
             if (zipFile.exists()) {
                 zipFile.delete()

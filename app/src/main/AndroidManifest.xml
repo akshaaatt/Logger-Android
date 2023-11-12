@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.FileLoggerSample">
+        android:theme="@style/Theme.LoggerSample">
         <activity
             android:name=".LoggerSample"
             android:exported="true">

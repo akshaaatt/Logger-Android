@@ -1,6 +1,6 @@
 package com.limurse.logger.file
 
-import com.limurse.logger.config.Constance.Companion.DIRECTORY
+import com.limurse.logger.config.Constants.Companion.DIRECTORY
 import com.limurse.logger.time.FastDateFormat
 import android.util.Log
 import java.io.File
