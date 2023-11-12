@@ -65,8 +65,6 @@ dependencies {
 
 ## Usage
 
-## Usage
-
 **Init:**
 ```kotlin
 val config = Config.Builder(it.path)
