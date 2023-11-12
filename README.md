@@ -155,6 +155,8 @@ Logger.deleteFiles()
 Logger.setEnable(boolean)
 ```
 
+#### Inspired [by](https://github.com/aabolfazl/FileLogger)
+
 ## License
 
 This Project is licensed under the [GPL version 3 or later](https://www.gnu.org/licenses/gpl-3.0.html).
