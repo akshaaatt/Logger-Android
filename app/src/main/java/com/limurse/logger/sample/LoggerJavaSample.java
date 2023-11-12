@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.FileProvider;
-
 import com.limurse.logger.Logger;
 import com.limurse.logger.config.Config;
 import com.limurse.logger.sample.databinding.ActivityMainBinding;
@@ -35,7 +34,7 @@ class LoggerJavaSample extends AppCompatActivity {
                 ? Objects.requireNonNull(getApplicationContext().getExternalFilesDir(null)).getPath()
                 : "";
         Config config = new Config.Builder(logDirectory)
-                .setDefaultTag("SampleAppLog")
+                .setDefaultTag("LoggerSample")
                 .setLogcatEnable(true)
                 .setStartupData(collectStartupData())
                 .build();
@@ -67,9 +66,9 @@ class LoggerJavaSample extends AppCompatActivity {
 
     private void writeSampleLogs() {
         Logger.INSTANCE.i("Custom", "This is an Info Log with custom TAG");
-        Logger.INSTANCE.d("Custom","This is a Debug Log");
-        Logger.INSTANCE.w("Custom","This is a Warning Log");
-        Logger.INSTANCE.e("Custom", new Throwable("This is an Error Log with custom TAG"));
+        Logger.INSTANCE.d(null,"This is a Debug Log");
+        Logger.INSTANCE.w(null,"This is a Warning Log");
+        Logger.INSTANCE.e(null, new Throwable("This is an Error Log with custom TAG"));
         showToast("Sample logs written");
     }
 

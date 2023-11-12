@@ -28,7 +28,7 @@ class LoggerSample : AppCompatActivity() {
     private fun initializeLogger() {
         val logDirectory = applicationContext.getExternalFilesDir(null)?.path.orEmpty()
         val config = Config.Builder(logDirectory)
-            .setDefaultTag("SampleAppLog")
+            .setDefaultTag("LoggerSample")
             .setLogcatEnable(true)
             .setStartupData(collectStartupData())
             .build()
