@@ -34,8 +34,6 @@ Android Library for easing logging and to store loges in Files
 * Written in Kotlin
 * No boilerplate code
 * Easy initialization
-* Supports InApp & Subscription products
-* Simple configuration for consumable products
 
 ## Gradle Dependency
 
